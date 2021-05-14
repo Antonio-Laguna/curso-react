@@ -1,11 +1,14 @@
-# Curso de React ⚛️
+# Guía de React con Hooks para principiantes
 
-Bienvenidos y bienvenidas a este repositorio que pretende aglutinar todos los ejemplos que vamos a ir viendo en el curso para React.
+Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/) y a [éste vídeo](https://www.youtube.com/watch?v=H_3IkTklcX8).
 
-## ¿Cómo consumo este repositorio?
+Creamos una pequeña aplicación con Create React App para seleccionar un gif de entre cuatro opciones.
 
-Hazle fork, descárgatelo, haz lo que quieras con él. Cada artículo va a ser una rama diferente y dentro podrás encontrar el código que conforma el artículo, su reto (si lo hay) y su solución.
+```bash
+$ npm install
+$ npm start
+```
 
-## Lista de artículos y ramas
+## Reto 
 
-1. Guía de React con Hooks para principiantes. [Artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/) / [Rama](/tree/001-guia-react-hooks)
+¿Puedes hacer que la primera opción esté seleccionada y muestre el gif por defecto?
