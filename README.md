@@ -12,3 +12,5 @@ $ npm start
 ## Reto 
 
 ¿Puedes hacer que la primera opción esté seleccionada y muestre el gif por defecto?
+
+[Ir al inicio](https://github.com/Antonio-Laguna/curso-react)
