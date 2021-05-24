@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>10 - Valores por defecto</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.13.0/babel.js"></script>
+<script type="text/babel">
+  function Greetings({ name }) {
+    return <h1>¡Hola, {name}!</h1>;
+  }
+
+  Greetings.defaultProps = {
+    name: 'visitante'
+  };
+
+  ReactDOM.render(
+    <Greetings />,
+    document.getElementById('root')
+  );
+</script>
+</body>
+</html>
