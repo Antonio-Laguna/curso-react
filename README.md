@@ -1,11 +1,12 @@
-# Curso de React ⚛️
+# Guía de React con Hooks para principiantes
 
-Bienvenidos y bienvenidas a este repositorio que pretende aglutinar todos los ejemplos que vamos a ir viendo en el curso para React.
+Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-aprendiendo-jsx) y a [éste vídeo](https://www.youtube.com/watch?v=H_3IkTklcX8). Aquí ahondamos sobre cómo funciona JSX desde cero.
 
-## ¿Cómo consumo este repositorio?
+```bash
+$ npm install
+$ npm start
+```
 
-Hazle fork, descárgatelo, haz lo que quieras con él. Cada artículo va a ser una rama diferente y dentro podrás encontrar el código que conforma el artículo, su reto (si lo hay) y su solución.
+Luego accede a `http://localhost:5000` y verás el listado de ejemplos que repasamos en el artículo.
 
-## Lista de artículos y ramas
-
-1. Guía de React con Hooks para principiantes. [Artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/) / [Vídeo](https://youtu.be/H_3IkTklcX8) / [Rama](https://github.com/Antonio-Laguna/curso-react/tree/001-guia-react-hooks)
+[Ir al inicio](https://github.com/Antonio-Laguna/curso-react)
