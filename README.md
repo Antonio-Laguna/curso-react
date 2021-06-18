@@ -13,8 +13,10 @@ $ npm start
 
 ¿Puedes hacer que la primera opción esté seleccionada y muestre el gif por defecto?
 
+[Ver la solución en vídeo](https://www.youtube.com/watch?v=RZ6EVaxmtN4&t=1620s).
+
 <details>
- <summary>Ver la solución</summary>
+ <summary>Ver la solución en código</summary>
 
 En App.js
 
