@@ -13,4 +13,50 @@ $ npm start
 
 ¿Puedes hacer que la primera opción esté seleccionada y muestre el gif por defecto?
 
+<details>
+ <summary>Ver la solución</summary>
+
+En App.js
+
+```diff
+function App() {
+-  const [image, setImage] = useState(null);
++  const [image, setImage] = useState(gifs.dogs);
+
+  return (
+    <div>
+      <form>
+        <h1>¡Alégrate el día!</h1>
+
+        <div className="fields">
+-         <GifOption text="Gatos" onChange={() => setImage(gifs.cats)} />
++         <GifOption checked text="Gatos" onChange={() => setImage(gifs.cats)} />
+          <GifOption text="Perros" onChange={() => setImage(gifs.dogs)} />
+          <GifOption text="Nicholas Cage" onChange={() => setImage(gifs.cage)} />
+          <GifOption text="Otro" onChange={() => setImage(gifs.other)} />
+        </div>
+        {image && (<img src={image} alt="" />)}
+      </form>
+    </div>
+```
+
+En GifOption.js
+
+```diff
+- export default function GifOption({ onChange, text }) {
++ export default function GifOption({ onChange, text, checked }) {
+  return (
+    <label>
+-      <input type="radio" name="tipo" onChange={onChange} /> {text}
++      <input type="radio" name="tipo" checked={checked} onChange={onChange} /> {text}
+    </label>
+  );
+}
+
+GifOption.defaultProps = {
+  checked: false
+}
+```
+</details>
+
 [Ir al inicio](https://github.com/Antonio-Laguna/curso-react)
