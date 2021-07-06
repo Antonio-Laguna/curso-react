@@ -1,6 +1,6 @@
 # Guía de React con Hooks para principiantes
 
-Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/) y a [éste vídeo](https://www.youtube.com/watch?v=H_3IkTklcX8).
+Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/?utm_source=GitHub&utm_medium=Rama+Curso+React) y a [éste vídeo](https://www.youtube.com/watch?v=H_3IkTklcX8).
 
 Creamos una pequeña aplicación con Create React App para seleccionar un gif de entre cuatro opciones.
 
