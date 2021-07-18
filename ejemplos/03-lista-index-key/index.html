@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>2 - Lista Letras React</title>
+  <title>3 - Lista con Index como Key</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
   <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -16,9 +16,11 @@
 <script type="text/babel">
   function MyList({ letters }) {
     return (
-      <ul>{letters.map(letter => (
-        <li>{letter}</li>
-      ))}</ul>
+      <ul>
+        {letters.map((letter, index) => (
+          <li key={index}>{letter}</li>
+        ))}
+      </ul>
     );
   }
 

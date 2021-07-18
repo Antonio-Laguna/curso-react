@@ -1,12 +1,16 @@
-# Curso de React ⚛️
+# Fundamentos de React: Renderizando listas con JSX
 
-Bienvenidos y bienvenidas a este repositorio que pretende aglutinar todos los ejemplos que vamos a ir viendo en el curso para React.
+Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-renderizar-listas-elementos-componentes?utm_source=GitHub&utm_medium=Rama+Curso+React) y a [éste vídeo](https://www.youtube.com/watch?v=RHqrw0sqvL4). Aquí ahondamos aprendemos sobre las listas y el atributo key.
 
-## ¿Cómo consumo este repositorio?
+```bash
+$ npm install
+$ npm start
+```
 
-Hazle fork, descárgatelo, haz lo que quieras con él. Cada artículo va a ser una rama diferente y dentro podrás encontrar el código que conforma el artículo, su reto (si lo hay) y su solución.
+Luego accede a `http://localhost:5000` y verás el listado de ejemplos que repasamos en el artículo.
 
-## Lista de artículos y ramas
+## Reto
 
-1. Guía de React con Hooks para principiantes. [Artículo](https://antonio.laguna.es/posts/guia-react-para-principiantes-con-hooks/) / [Vídeo](https://youtu.be/H_3IkTklcX8) / [Rama](https://github.com/Antonio-Laguna/curso-react/tree/001-guia-react-hooks)
-2. Aprendiendo JSX. [Artículo](https://antonio.laguna.es/posts/guia-react-aprendiendo-jsx) / [Vídeo](https://youtu.be/RZ6EVaxmtN4) / [Rama](https://github.com/Antonio-Laguna/curso-react/tree/002-aprendiendo-jsx)
+¿Puedes convertir el código de la [cuarta demo](https://github.com/Antonio-Laguna/curso-react/tree/003-renderizando-listas/ejemplos/04-demo-key/index.html) para que use componentes y además no tenga un error de ids repetidas? ¡Coméntamelo en las [discusiones](https://github.com/Antonio-Laguna/curso-react/discussions)!
+
+[Ir al inicio](https://github.com/Antonio-Laguna/curso-react)

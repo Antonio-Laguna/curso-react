@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4 - Demo de Keys con Index</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="app" id="root"></div>
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.13.0/babel.js"></script>
+<script type="text/babel">
+  const { useState } = React;
+
+  function App() {
+    const [myList, setMyList] = useState([
+      {
+        name: "Invitado 1",
+        id: 42
+      },
+      {
+        name: "Invitado 2",
+        id: 73
+      }
+    ]);
+
+    const handleAddGuest = () => {
+      const newGuest = {
+        name: `Invitado ${myList.length + 1}`,
+        id: (new Date().getTime())
+      };
+      const newList = [newGuest, ...myList];
+      setMyList(newList);
+    };
+
+    return (
+      <div>
+        <h1>Listas de invitados</h1>
+        <p>Escribe algo en los inputs y haz click en "Añadir invitado".</p>
+
+        <h2>Con index</h2>
+        <div className="guests">
+          {myList.map((guest, index) => (
+            <div className="guest" key={index}>
+              <p>Nombre: {guest.name}</p>
+              <div className="form-field">
+                <label htmlFor={guest.id}>Dirección</label>
+                <input id={guest.id} type="text" />
+              </div>
+            </div>
+          ))}
+        </div>
+        <h2>Con id</h2>
+
+        <div className="guests">
+          {myList.map((guest) => (
+            <div className="guest" key={guest.id}>
+              <p>Nombre: {guest.name}</p>
+
+              <div className="form-field">
+                <label htmlFor={guest.id}>Dirección</label>
+                <input id={guest.id} type="text" />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <button onClick={handleAddGuest}>Añadir invitado</button>
+      </div>
+    );
+  }
+
+  const rootElement = document.getElementById('root');
+  ReactDOM.render(<App />, rootElement);
+</script>
+</body>
+</html>
