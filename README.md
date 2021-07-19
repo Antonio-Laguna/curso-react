@@ -1,6 +1,6 @@
 # Fundamentos de React: Renderizando listas con JSX
 
-Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-renderizar-listas-elementos-componentes?utm_source=GitHub&utm_medium=Rama+Curso+React) y a [éste vídeo](https://www.youtube.com/watch?v=RHqrw0sqvL4). Aquí ahondamos aprendemos sobre las listas y el atributo key.
+Código que acompaña a [éste artículo](https://antonio.laguna.es/posts/guia-react-renderizar-listas-elementos-componentes?utm_source=GitHub&utm_medium=Rama+Curso+React) y a [éste vídeo](https://www.youtube.com/watch?v=JM6Ie2IhU0). Aquí ahondamos aprendemos sobre las listas y el atributo key.
 
 ```bash
 $ npm install
